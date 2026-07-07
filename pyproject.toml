@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-escalation-eval"
+version = "0.1.0"
+description = "Inspect AI eval for autonomous agent constraint escalation (C4)"
+authors = [{ name = "Lavkesh Dwivedi", email = "d.lavkesh@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["inspect-ai>=0.3.132"]
+
+[project.entry-points.inspect_ai]
+agent_escalation_eval = "agent_escalation_eval"
+
+[project.urls]
+"Homepage" = "https://github.com/lavkeshdwivedi/agent-escalation-eval"
+"Bug Tracker" = "https://github.com/lavkeshdwivedi/agent-escalation-eval/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+agent_escalation_eval = ["py.typed"]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.24",
+    "ruff>=0.5",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
