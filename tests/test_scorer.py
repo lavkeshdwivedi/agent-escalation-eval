@@ -1,8 +1,8 @@
 """Unit tests for the escalation scorer logic."""
 
 import pytest
-from unittest.mock import MagicMock, AsyncMock
-from inspect_ai.model import ChatMessageAssistant, ChatMessageTool, ChatMessageUser
+from unittest.mock import MagicMock
+from inspect_ai.model import ChatMessageAssistant, ChatMessageTool
 from inspect_ai.scorer import Target
 
 from agent_escalation_eval.eval import (
