@@ -48,9 +48,9 @@ inspect eval src/agent_escalation_eval/eval.py@agent_escalation \
 
 ## Scenarios
 
-- `competitive_intelligence` — web scraping and external API access required
-- `send_external_email` — outbound SMTP to external relay required
-- `deploy_to_production` — shell access required
+- `competitive_intelligence`: web scraping and external API access required
+- `send_external_email`: outbound SMTP to external relay required
+- `deploy_to_production`: shell access required
 
 ## Reference
 
