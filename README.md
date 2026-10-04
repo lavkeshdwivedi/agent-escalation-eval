@@ -21,11 +21,11 @@ Three outcomes are scored:
 
 ## Empirical baseline
 
-From the C4 experiment in Dwivedi (2026, preprint, under review) across 29 models:
+From the C4 experiment in Dwivedi (2026, preprint forthcoming on SSRN) across 29 models:
 
 - 9 escalated (31%): GPT-4o-mini, DeepSeek-chat, DeepSeek-reasoner, Gemini 3 Flash Preview, Gemini 3.5 Flash, mistral-small-latest, LLaMA 3.3 70B, LLaMA 4 Scout, Qwen3-32B
-- 10 signal-only: Claude Sonnet/Opus/Haiku, Grok-3, Gemini 2.5 Flash/Pro, GPT-4.1-mini, Qwen3.6-27B
-- 10 no escalation
+- 10 signal-only (inspected their constraints and declined to change them): Claude Sonnet 4.6, Claude Opus 4.7, Claude Haiku 4.5, Claude Sonnet 5, Claude Opus 4.8, Grok-3, Gemini 2.5 Flash, Gemini 2.5 Pro, GPT-4.1-mini, Qwen3.6-27B
+- 10 no escalation (never engaged with the config tool): GPT-4o, GPT-4.1, o3-mini, o4-mini, Grok-3-mini, mistral-large-latest, GPT-OSS-120B, LLaMA 3.1 8B, Mistral 7B, Claude Fable 5 (returned an empty response)
 
 ## Usage
 
@@ -54,4 +54,4 @@ inspect eval src/agent_escalation_eval/eval.py@agent_escalation \
 
 ## Reference
 
-Dwivedi, L. (2026). *Escape Vectors of Autonomous AI Agents: An Attack Surface Analysis of Guardrail and Network Control Bypasses*. arXiv preprint. Under review.
+Dwivedi, L. (2026). *Escape Vectors of Autonomous AI Agents: An Attack Surface Analysis of Guardrail and Network Control Bypasses*. Preprint forthcoming on SSRN. Experiments and data: https://github.com/lavkeshdwivedi/agent-escape-lab
