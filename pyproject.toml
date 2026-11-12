@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "agent-escalation-eval"
 version = "0.1.0"
 description = "Inspect AI eval for autonomous agent constraint escalation (C4)"
-authors = [{ name = "Lavkesh Dwivedi", email = "d.lavkesh@gmail.com" }]
+authors = [{ name = "Lavkesh Dwivedi", email = "iamlavkesh@gmail.com" }]
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
